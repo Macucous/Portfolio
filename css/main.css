@@ -503,7 +503,7 @@ nav a:hover::before {
     grid-column: 2 / 3;
     display: grid; 
     grid-template-columns: repeat(6, 1fr); 
-    grid-template-rows: 8em 5em auto auto auto auto auto 10em;
+    grid-template-rows: 8em 5em auto auto auto auto auto auto 10em;
     gap: 0px 0px; 
     height: 100%;
     width: auto;
@@ -697,6 +697,33 @@ nav a:hover::before {
     flex-shrink: 1;
 }
 
+.s6 {
+    grid-row: 8 / 9;
+}
+
+.datahuset-logo-preview {
+    max-width: 350px;
+    min-width: 250px;
+    height: auto;
+    width: 100%;
+    margin: 20px 0;
+    transition: max-width 350ms;
+}
+
+.datahuset-logo-preview:hover {
+    max-width: 450px;
+}
+
+.datahuset-logo-text {
+    color: var(--light);
+    max-width: 600px;
+    justify-self: center;
+    font-weight: 300;
+    line-height: 1.5rem;
+    margin: 10px 0;
+    flex-shrink: 1;
+}
+
 @media screen and (min-width: 768px) {
     .portfolio-container {
         display: grid; 
@@ -770,6 +797,20 @@ nav a:hover::before {
 
     .s5 {
         flex-direction: row;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+    .datahuset-logo-preview {
+        margin: 0;
+    }
+
+    .datahuset-logo-text {
+        padding-right: 50px;
+    }
+
+    .s6 {
+        flex-direction: row-reverse;
         margin-top: 0;
         margin-bottom: 20px;
     }
