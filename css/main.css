@@ -503,7 +503,7 @@ nav a:hover::before {
     grid-column: 2 / 3;
     display: grid; 
     grid-template-columns: repeat(6, 1fr); 
-    grid-template-rows: 8em 5em auto auto auto auto auto auto auto 10em;
+    grid-template-rows: 8em 5em auto auto auto auto auto auto auto 5em;
     gap: 0px 0px; 
     height: 100%;
     width: auto;
@@ -576,14 +576,14 @@ nav a:hover::before {
     flex-shrink: 0;
 }
 
-/* @keyframes play {
+@keyframes play {
     0% {
         background-position: 0px;
     }
     100% {
         background-position: -5825px;
     }
-} */
+}
 
 .s2 {
     grid-row: 4 / 5;
