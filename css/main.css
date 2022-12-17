@@ -503,7 +503,7 @@ nav a:hover::before {
     grid-column: 2 / 3;
     display: grid; 
     grid-template-columns: repeat(6, 1fr); 
-    grid-template-rows: 8em 5em auto auto auto auto auto auto auto 5em;
+    grid-template-rows: 8em 5em auto auto auto auto auto auto auto auto 5em;
     gap: 0px 0px; 
     height: 100%;
     width: auto;
@@ -751,6 +751,33 @@ nav a:hover::before {
     flex-shrink: 1;
 }
 
+.s8 {
+    grid-row: 10 / 11;
+}
+
+.rolling-marbles-preview {
+    max-width: 350px;
+    min-width: 250px;
+    height: auto;
+    width: 100%;
+    margin: 20px 0;
+    transition: max-width 350ms;
+}
+
+.rolling-marbles-preview:hover {
+    max-width: 420px;
+}
+
+.rolling-marbles-text {
+    color: var(--light);
+    max-width: 600px;
+    justify-self: center;
+    font-weight: 300;
+    line-height: 1.5rem;
+    margin: 10px 0;
+    flex-shrink: 1;
+}
+
 @media screen and (min-width: 768px) {
     .portfolio-container {
         display: grid; 
@@ -852,6 +879,20 @@ nav a:hover::before {
 
     .s7 {
         flex-direction: row;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+    .rolling-marbles-preview {
+        margin: 0;
+    }
+
+    .rolling-marbles-text {
+        padding-right: 50px;
+    }
+
+    .s8 {
+        flex-direction: row-reverse;
         margin-top: 0;
         margin-bottom: 20px;
     }
