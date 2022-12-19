@@ -503,7 +503,7 @@ nav a:hover::before {
     grid-column: 2 / 3;
     display: grid; 
     grid-template-columns: repeat(6, 1fr); 
-    grid-template-rows: 8em 5em auto auto auto auto auto auto auto auto auto auto 5em;
+    grid-template-rows: 8em 5em auto auto auto auto auto auto auto auto auto auto auto auto 5em;
     gap: 0px 0px; 
     height: 100%;
     width: auto;
@@ -832,6 +832,60 @@ nav a:hover::before {
     flex-shrink: 1;
 }
 
+.s11 {
+    grid-row: 13 / 14;
+}
+
+.smokey-chimney-preview {
+    max-width: 350px;
+    min-width: 250px;
+    height: auto;
+    width: 100%;
+    margin: 20px 0;
+    transition: max-width 350ms;
+}
+
+.smokey-chimney-preview:hover {
+    max-width: 420px;
+}
+
+.smokey-chimney-text {
+    color: var(--light);
+    max-width: 600px;
+    justify-self: center;
+    font-weight: 300;
+    line-height: 1.5rem;
+    margin: 10px 0;
+    flex-shrink: 1;
+}
+
+.s12 {
+    grid-row: 14 / 15;
+}
+
+.tiny-kitchen-preview {
+    max-width: 350px;
+    min-width: 250px;
+    height: auto;
+    width: 100%;
+    margin: 20px 0;
+    transition: max-width 350ms;
+}
+
+.tiny-kitchen-preview:hover {
+    max-width: 420px;
+}
+
+.tiny-kitchen-text {
+    color: var(--light);
+    max-width: 600px;
+    justify-self: center;
+    font-weight: 300;
+    line-height: 1.5rem;
+    margin: 10px 0;
+    flex-shrink: 1;
+}
+
 @media screen and (min-width: 768px) {
     .portfolio-container {
         display: grid; 
@@ -974,6 +1028,34 @@ nav a:hover::before {
     }
 
     .s10 {
+        flex-direction: row-reverse;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+    .smokey-chimney-preview {
+        margin: 0;
+    }
+
+    .smokey-chimney-text {
+        padding-left: 50px;
+    }
+
+    .s11 {
+        flex-direction: row;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+    .tiny-kitchen-preview {
+        margin: 0;
+    }
+
+    .tiny-kitchen-text {
+        padding-right: 50px;
+    }
+
+    .s12 {
         flex-direction: row-reverse;
         margin-top: 0;
         margin-bottom: 20px;
