@@ -927,10 +927,11 @@ nav a:hover::before {
     }
 
     .pc-upgrade-text {
-        padding-left: 50px;
+        padding-right: 50px;
     }
 
     .s3 {
+        flex-direction: row;
         margin-top: 0;
         margin-bottom: 20px;
     }
@@ -940,7 +941,7 @@ nav a:hover::before {
     }
 
     .spinny-machine-text {
-        padding-right: 50px;
+        padding-left: 50px;
     }
 
     .s4 {
@@ -982,7 +983,7 @@ nav a:hover::before {
     }
 
     .quloer-text {
-        padding-left: 50px;
+        padding-right: 50px;
     }
 
     .s7 {
@@ -996,7 +997,7 @@ nav a:hover::before {
     }
 
     .rolling-marbles-text {
-        padding-right: 50px;
+        padding-left: 50px;
     }
 
     .s8 {
