@@ -174,21 +174,11 @@ nav a {
 nav a:hover {
     color: var(--whiter);
     text-shadow: 0 0 10px var(--whiter), 0 0 5px var(--white);
-    /* animation: glow 1500ms ease-in infinite alternate; */
 }
 
 nav a:active {
     text-shadow: none;
 }
-
-/* @keyframes glow {
-    from {
-        text-shadow: 0 0 0 var(--whiter);
-    }
-    to {
-        text-shadow: 0 0 10px var(--whiter), 0 0 5px var(--whiter);
-    }
-} */
 
 .nav-toggle:checked ~ nav {
     transform: scale(1,1); /* display: block; */
@@ -254,7 +244,7 @@ nav a:active {
         left: 0.05em;
         right: 0.05em;
         transform: scale(0,1);
-        /* transform-origin: right; */
+        transform-origin: center;
         transition: transform cubic-bezier(.75,-0.01,.2,.96) 300ms;
     }
 }
